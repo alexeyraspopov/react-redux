@@ -46,7 +46,7 @@ export function createProvider(storeKey = 'store') {
     }
 
     Provider.propTypes = {
-        store: storeShape.isRequired,
+        [storeKey]: storeShape.isRequired,
         children: PropTypes.element.isRequired,
     }
     Provider.childContextTypes = {
